@@ -480,10 +480,6 @@ static void sysstats_fill_zoneinfo(struct sys_memstats *stats)
 	}
 	stats->zram_compressed = K(zspages);
 }
-#elif
-static void sysstats_fill_zoneinfo(struct sys_memstats *stats)
-{
-}
 #endif
 
 static void sysstats_build(struct sys_memstats *stats)
